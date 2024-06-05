@@ -9,7 +9,7 @@ public class ReadTwo
     public static void main(String[] args)
     {
         try {
-            Scanner fileIn = new Scanner(new File("input.txt"));
+            Scanner fileIn = new Scanner(new File(ReadTwo.class.getResource("input.txt").getFile()));
 
             while (fileIn.hasNext()) 
             {
@@ -18,8 +18,8 @@ public class ReadTwo
                 // Split the line into a String array
                 String[] input = lineIn.split(",");
                 int sum = 0;
-                for (int i = 0; i < input.length; i ++) {
-                    sum += Integer.parseInt(input[i]);
+                for (String s : input) {
+                    sum += Integer.parseInt(s);
                 }
                 System.out.println(sum);
             }
