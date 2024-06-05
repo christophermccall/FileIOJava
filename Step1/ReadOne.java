@@ -12,7 +12,7 @@ public class ReadOne
         try {
             // Create the Scanner object using the file
             // as input
-            Scanner fileIn = new Scanner(new File(ReadOne.class.getResource("input.txt").getFile()));
+            Scanner fileIn = new Scanner(new File("/Users/chris/Projects/FileIOJava/Step1/input.txt"));
             
             /* Loop while the file still has lines.
              * .hasNext() looks to see if a line exists

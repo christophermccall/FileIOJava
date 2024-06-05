@@ -9,7 +9,7 @@ public class ReadTwo
     public static void main(String[] args)
     {
         try {
-            Scanner fileIn = new Scanner(new File(ReadTwo.class.getResource("input.txt").getFile()));
+            Scanner fileIn = new Scanner(new File("/Users/chris/Projects/FileIOJava/Step2/input.txt"));
 
             while (fileIn.hasNext()) 
             {
